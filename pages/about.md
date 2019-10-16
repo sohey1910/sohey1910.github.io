@@ -20,7 +20,7 @@ permalink: /pages/about.html
 	<hr>
 	<br>
 	<p>
-	    现在是研二的学生，主要研究图象生成对计算机视觉和听觉感知有浓厚兴趣，希望能和优秀的你多多交流！
+	    博客使用TwistedW's Home的模板创建，非常感谢。
 	</p>
 	<br>
 
@@ -31,15 +31,15 @@ permalink: /pages/about.html
 	<table class="table table-striped">
 		<tr>
 			<td>姓  名：</td>    
-			<td>武  广</td>
+			<td>三號南頋</td>
 		</tr>
 		<tr>
 			<td>学  历：</td>    
-			<td>研究生</td>
+			<td>研究生在读</td>
 		</tr>
 		<tr>
-			<td>学  校：</td>    
-			<td>合肥工业大学计算机与信息学院</td>
+			<td>专  业：</td>    
+			<td>软件工程</td>
 		</tr>
 	</table>
 
@@ -52,7 +52,7 @@ permalink: /pages/about.html
 				Email：
 			</td>  
 			<td>
-				twistedwg@hotmail.com
+				soheyi@163.com
 			</td>
 		</tr>
 
@@ -61,27 +61,20 @@ permalink: /pages/about.html
 				github：
 			</td>  
 			<td>
-				<a href="{{ site.author.github }}" target="_blank">github.com/TwistedW</a>
+				<a href="{{ site.author.github }}" target="_blank">github.com/sohey1910</a>
 			</td>  
 		</tr>
 
 		<tr>
 			<td>
-				微博：
-			</td> 
-			<td>
-				<a href="{{ site.author.weibo }}" target="_blank">https://weibo.com/u/5261676762</a>
-			</td> 
-		</tr>
-		
-		<tr>
-			<td>
 				QQ：
 			</td> 
 			<td>
-				2359375192
+				<a href="{{ site.author.weibo }}" target="_blank">1793673290</a>
 			</td> 
 		</tr>
+		
+		
 	</table>
 
 
@@ -90,7 +83,7 @@ permalink: /pages/about.html
 	<hr>
 	<br>
 	<p>
-	在校学生，喜欢跑步，充满正能量。
+	加班狗一枚。
 	</p>
 	<br>
 
@@ -98,7 +91,7 @@ permalink: /pages/about.html
 	<hr>
 	<br>
 	<p>
-	努力活成自己
+	见天地，见众生，见自己
 	</p>
 	<br>
 	<br> 
