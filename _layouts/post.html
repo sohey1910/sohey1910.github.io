@@ -1,0 +1,67 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="info">
+	    <p class="post-meta"><i class="fa fa-calendar"></i>&nbsp;{{ page.date | date:"%Y-%m-%d" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+	    {% if page.tags.size > 0 %}
+		<i class="fa fa-tags"></i>
+		<span class="index-post-tag">
+		{% for tag in page.tags %}
+			<a class="pjaxlink" href="/pages/tags.html#{{tag}}">{{ tag}}</a>
+		{% endfor %}
+		</span>
+	    {% endif %}
+        <span id="busuanzi_container_page_pv">
+			<i class="fa fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+		</span>
+    </div>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+</div>
+
+	<div style="text-align: center;">
+        <a onclick="dashangToggle()" class="contactme" title="打赏作者" style="text-decoration:none;" href="javascript:void(0)">打赏</a>
+    </div>
+
+  <div class="prevandnext">
+    	  {% if page.next %}
+	    <div style="margin:0.5em;">
+	    <span>上一篇 ：</span><a class="pjaxlink" href="{{ site.url }}{{ page.next.url }}"  title="{{ page.next.title }}">{{ page.next.title }}</a>
+	    </div>
+	  {% endif %}
+  	  {% if page.previous %}
+	    <div style="margin:0.5em;">
+	    <span>下一篇 ：</span><a class="pjaxlink" href="{{ site.url }}{{ page.previous.url }}"  title="{{ page.previous.title }}">{{ page.previous.title }}</a>
+	    </div>
+	  {% endif %}
+	  	<div style="margin:0.5em;">
+			<span> 版权所有，转载时必须以链接形式注明原始出处</span>
+	    </div>
+  </div>
+
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
+<script src="https://billts.site/js/gitment.js"></script>
+<!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+<!--<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>-->
+<script>
+	var gitment = new Gitment({
+		id: '{{ page.date }}',
+		owner: 'TwistedW',
+		repo: 'TwistedW.github.io',
+		oauth: {
+			client_id: '4399884d932674191ee8',
+			client_secret: '8d77ba236dae14003d2e471c72449b03cfd50d1e',
+		},
+	});
+	gitment.render('gitmentContainer');
+</script>
+
+  {% include dashang.html %}
